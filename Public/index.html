@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="CSS/bootstrap.min.css">
+<link rel="stylesheet" href="CSS/styling.css">
+<link rel="stylesheet" href="CSS/font-awesome-4.1.0/css/font-awesome.min.css">
+<link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+<!-- Optional: Include the jQuery library -->
+<script src="Js/jquery.js"></script> 
+<!-- Optional: Incorporate the Bootstrap JavaScript plugins -->
+<script src="Js/bootstrap.min.js"></script>
+<script src= "http://ajax.googleapis.com/ajax/libs/angularjs/1.3.3/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.3/angular-route.min.js"></script>
+<script type="text/javascript" src="routing.js"></script>
+  </head>
+  <body id="page-top">
+  	<nav class="navbar navbar-default navbar-fixed-top">
+  		<div class="container">
+        <a class="navbar-brand" href="#page-top">Shivguru Rao B V</a>
+     
+
+           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#workexp">Work Experience</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#projects">Projects</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#contact">Contact</a>
+                    </li>
+
+                </ul>
+            </div>
+      </div>     
+
+  	</nav>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <img class="img-responsive" src="../img/shiv.gif" alt="">
+                    <div class="intro-text">
+                        <span class="name">Shivguru Rao BhimasenaRao VisweswaraRao</span>
+                        
+                        <span class="skills">Graduate Student (Informatics) - Web Developer - Programming Enthusiast</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Portfolio Grid Section -->
+    <section id="about">
+      <div class="container">
+        <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="heading">ABOUT ME</h2>
+                </div>
+        </div>
+      </br>
+      </br>
+        <div class="row">
+                <div class="col-lg-4 ">
+                    <p>I am 23 year old and I come from Bangalore,India. I have Bachelor's degree in Computer Science from VTU, Karnataka. Graduated with 83% in my Bachelor's which puts me with in Top 10 in my class.</p>
+                </div>
+                <div class="col-lg-4 ">
+                    <p>I got opportunities to work on various Technologies and have been a part of pretty cool Projects ranging from Web Development to Data Compression.I worked as a Scholar at SAP Labs,India for a year after my graduation in 2013.   </p>
+                </div>
+                <div class="col-lg-4 ">
+                    <p>I am currently a GradStudent in Informatics at Technical University of Munich. I play with technology because I am passionate about it, I code because I like solving problems, I read because it makes me think. I am currently looking for part time development position. </p>
+                </div>
+                
+        </div>
+        </br>
+        </br>
+        <div class="row">
+                <div class="col-lg-12 text-center">
+                    <a href="../Shivguru CV.pdf" class="btn btn-info" role="button">Download Resume</a>
+                </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" ng-app="projects">
+        <div ng-view>
+          <!--
+             This DIV loads templates depending upon route.
+         -->
+        </div>
+      
+    </section>
+
+     <footer class="text-center">
+        <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-4">
+                        <h3>Location</h3>
+                        <p>Heiglhof Strasse 64<br>Munich, Germany 81377</p>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>Around the Web</h3>
+                        <ul class="list-inline">
+                            <li>
+                                <a href="https://www.facebook.com/shivguru.rao" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.google.com/+ShivguruRao" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        Copyright &copy; Shivguru Rao
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-top page-scroll visible-xs visble-sm">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
+
+  </body>
+</html>
